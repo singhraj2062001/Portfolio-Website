@@ -14,7 +14,7 @@
     <div class="video-container">
         <video autoplay loop muted>
             <source src="{{ url_for('static', filename='videos/video3.mp4') }}" type="video/mp4">
-            <!-- Add more source elements for other video formats if needed -->
+
             Your browser does not support the video tag.
         </video>
         <div class="overlay"></div>
@@ -49,13 +49,13 @@
 
         </header>
     </div>
-    <!-- Update the image path and introduction content -->
+
     <section id="about" class="scroll">
         <h2>About Me</h2>
         <div class="about-me-line"></div>
         <p class="description">Experienced and passionate computer science student with a focus on data science and machine learning.</p>
         <div class="introduction">
-            <img src="static/images/image1.jpg" alt="Your Image">
+            <img src="{{ url_for('static', filename='images/nav.png') }}" alt="Image 1">
             <p>
                 I'm Navjot Singh – a tech enthusiast with a passion for data science and machine learning. My journey spans diverse projects and a solid foundation in Computer Science and Engineering, shaping my proficiency in Python, data science libraries, and advanced machine learning frameworks like TensorFlow.
                 <br>

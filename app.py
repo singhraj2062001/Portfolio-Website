@@ -5,7 +5,7 @@ from email.mime.multipart import MIMEMultipart
 
 
 app = Flask(__name__)
-app.secret_key = 'oeprptwwew'
+app.secret_key = '**********'
 
 
 @app.route('/')
