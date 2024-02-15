@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Title</title>
+</head>
+<body>
+
+<header>
+
+     <div class="project">
+    <header>
+        <h2>
+            DATASETS
+        </h2>
+
+    <nav>
+
+            <div class="logo">
+                <a href="/"><img src="{{ url_for('static', filename='images/NS.png') }}" alt="Your Image"></a>
+            </div>
+
+        <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+
+        <ul class="nav-menu">
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#achievements">Achievements</a></li>
+            <li><a href="/projects" >Projects</a></li>
+            <li><a href="/skills">Skills</a></li>
+            <li><a href="/datasets" style="color:#00FFFF;">Datasets</a></li>
+            <li><a href="/resume">Resume</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+        </header>
+    </div>
+
+
+
+    <div class="datasets-info">
+        <div class="dataset-line"></div>
+        <p>Welcome to my datasets page, featuring a curated collection of meticulously crafted datasets designed for data analysis and machine learning tasks. Each dataset has been carefully created with attention to detail, ensuring high quality and reliability for your research needs.
+        <br>
+            <br>
+        These datasets serve as valuable resources for researchers, practitioners, and enthusiasts alike, providing insights and opportunities for exploration in diverse domains. Click on the "Download Dataset" button below each dataset to access the data and embark on your exploration journey.</p>
+    </div>
+
+
+
+<div class="datasets-content">
+        <div class="dataset-card">
+            <div class="dataset-image">
+                <img src="{{ url_for('static', filename='images/meds_data.jpg') }}" alt="Dataset 1">
+            </div>
+            <div class="dataset-details">
+                <h3>11000 Medicine Dataset</h3>
+                <p>This dataset represents a significant asset for healthcare professionals, data scientists, and enthusiasts seeking to delve into the realm of medicines and healthcare products. It encompasses a comprehensive repository of data extracted from 1mg, a prominent online pharmacy and healthcare platform, encompassing a vast array of over 11,000 medicines.</p>
+                <a href="https://www.kaggle.com/datasets/singhnavjot2062001/11000-medicine-details" class="btn">Download Dataset</a>
+            </div>
+        </div>
+        <div class="dataset-card">
+            <div class="dataset-image">
+                <img src="{{ url_for('static', filename='images/advertise_data.jpg') }}" alt="Dataset 2">
+            </div>
+            <div class="dataset-details">
+                <h3>Advertising Dataset</h3>
+                <p>Delve into advertising impact on product sales with a synthesized dataset featuring seven columns representing advertising costs across various platforms. Designed for analysis and experimentation, this dataset quantifies units sold alongside advertising expenditures, offering insights into marketing strategies and optimization opportunities.</p>
+                <a href="https://www.kaggle.com/datasets/singhnavjot2062001/product-advertising-data" class="btn">Download Dataset</a>
+            </div>
+        </div>
+        <div class="dataset-card">
+            <div class="dataset-image">
+                <img src="{{ url_for('static', filename='images/shapes_data.jpg') }}" alt="Dataset 3">
+            </div>
+            <div class="dataset-details">
+                <h3>Synthetic Shapes Dataset</h3>
+                <p>Explore the "Synthetic Shapes" dataset: 600 high-quality images of circles, squares, and triangles, meticulously crafted with the help of Python. Ideal for shape recognition tasks and can also be useful for implementing cnn, this dataset is divided into training and testing sets, offering versatility and precision for computer vision and machine learning practitioners.</p>
+                <a href="https://www.kaggle.com/datasets/singhnavjot2062001/geometric-shapes-circle-square-triangle" class="btn">Download Dataset</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+  <footer>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/singh-navjot206" target="_blank"><img src="{{ url_for('static', filename='images/linkedin.png') }}" alt="LinkedIn"></a>
+                <a href="https://www.kaggle.com/singhnavjot2062001" target="_blank"><img src="{{ url_for('static', filename='images/kaggle.png') }}" alt="Kaggle"></a>
+                <a href="https://github.com/singhraj2062001" target="_blank"><img src="{{ url_for('static', filename='images/github.png') }}" alt="GitHub"></a>
+                <a href="https://www.instagram.com/hint4success/" target="_blank"><img src="{{ url_for('static', filename='images/instagram.png') }}" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2024 by Navjot Singh. All rights reserved.</p>
+    </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu-toggle').click(function() {
+                $(this).toggleClass('menu-open');
+                $('.nav-menu').toggleClass('active');
+            });
+        });
+    </script>
+
+
+</body>
+</html>

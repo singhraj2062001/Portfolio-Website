@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Title</title>
+</head>
+<body>
+
+
+    <header>
+     <div class="project">
+
+
+        <h2>
+            PROJECTS
+        </h2>
+
+    <nav>
+
+            <div class="logo">
+                <a href="/"><img src="{{ url_for('static', filename='images/NS.png') }}" alt="Your Image"></a>
+            </div>
+
+        <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+        </div>
+
+
+        <ul class="nav-menu">
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#achievements">Achievements</a></li>
+            <li><a href="/projects" style="color:#00FFFF;">Projects</a></li>
+            <li><a href="/skills">Skills</a></li>
+            <li><a href="/datasets">Datasets</a></li>
+            <li><a href="/resume">Resume</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    </div>
+    </header>
+
+
+
+    <!-- Projects Data  -->
+    <section class="projects-section">
+
+        <div class="projects">
+
+            <div class="project-details">
+                <div class="project-name-line"></div>
+                <h3>Medicine Recommender System</h3>
+                <p>
+                    Developed a medicine recommender system with an extensive database of 11,000 medicines sourced through web scraping from 1mg.com. Implemented collaborative filtering techniques for personalized recommendations. Engineered a highly efficient NLP-based system in Python, achieving a remarkable 95% recommendation accuracy, leading to a potential 70% increase in user engagement. Constructed a user interface using Flask, aligning with engineering objectives and requirements.
+                </p>
+
+                    <div class="technologies">
+                        <span class="tech-mark">Python</span>
+                        <span class="tech-mark">Scikit-Learn</span>
+                        <span class="tech-mark">Flask</span>
+                        <span class="tech-mark">NLP</span>
+
+                    </div>
+                    <a href="https://medicine-recommender-system.onrender.com/" class="project-button">View Project</a>
+
+            </div>
+            <div class="project-image">
+
+                <img src="{{ url_for('static', filename='images/1.png') }}" alt="Project Image 2">
+            </div>
+        </div>
+
+        <div class="projects">
+            <div class="project-image">
+                <img src="{{ url_for('static', filename='images/2.png') }}" alt="Project Image 1">
+            </div>
+            <div class="project-details">
+                <div class="project-name-line"></div>
+                <h3>Airbnb Business Analysis</h3>
+                <p>
+                    Applied advanced analytics to extract key insights from Airbnb listings, showcasing expertise in EDA and visualization. Uncovered market trends, host behaviors, and geographical patterns, contributing valuable business insights. Executed in-depth correlation analyses and created compelling visualizations, demonstrating a strong skill set in data-driven decision support.
+                </p>
+
+                <div class="technologies">
+                        <span class="tech-mark">Python</span>
+                        <span class="tech-mark">Matplotlib</span>
+                        <span class="tech-mark">Seaborn</span>
+                        <span class="tech-mark">EDA</span>
+                </div>
+                    <a href="https://github.com/singhraj2062001/Airbnb-Data-Analysis" class="project-button">View Project</a>
+
+            </div>
+        </div>
+
+
+        <div class="projects">
+
+            <div class="project-details">
+                <div class="project-name-line"></div>
+                <h3>Future Sales Predictor</h3>
+                <p>
+                    Developed Linear Regression-based sales prediction model with 92% accuracy using advertising costs from various platforms (newspaper, TV, social media). Analyzed data with Python (Pandas, Scikit-learn) on a 200-sample dataset for model building. Provided actionable insights, that can result in a 20% increase in ROI for advertising campaigns and significant sales growth.
+                </p>
+
+                    <div class="technologies">
+                        <span class="tech-mark">Numpy</span>
+                        <span class="tech-mark">Pandas</span>
+                        <span class="tech-mark">Linear Regression</span>
+                        <span class="tech-mark">Plotly</span>
+                    </div>
+                    <a href="https://github.com/singhraj2062001/Future-Sales-Predictor" class="project-button">View Project</a>
+
+            </div>
+            <div class="project-image">
+
+                <img src="{{ url_for('static', filename='images/3.png') }}" alt="Project Image 2">
+            </div>
+        </div>
+
+        <div class="projects">
+            <div class="project-image">
+                <img src="{{ url_for('static', filename='images/4.png') }}" alt="Project Image 1">
+            </div>
+
+            <div class="project-details">
+                <div class="project-name-line"></div>
+                <h3>Shapes Classification</h3>
+                <p>
+                    This initiative focused on developing a robust shape classifier using the Keras library and Convolutional Neural Networks (CNNs). Through meticulous training on a diverse dataset, the model achieved an impressive 92% accuracy in classifying geometric shapes. Beyond the numerical success, the project demonstrated practical utility in computer vision applications, offering a reliable solution for precise shape recognition across various industries.
+                </p>
+
+                <div class="technologies">
+                        <span class="tech-mark">Python</span>
+                        <span class="tech-mark">Tensorflow</span>
+                        <span class="tech-mark">Keras</span>
+                        <span class="tech-mark">CNN</span>
+                </div>
+                    <a href="https://github.com/singhraj2062001/Shapes-Classifier" class="project-button">View Project</a>
+
+            </div>
+        </div>
+
+
+        <div class="projects">
+
+            <div class="project-details">
+                <div class="project-name-line"></div>
+                <h3>Digit Recognition CNN</h3>
+                <p>
+                    The project centered around crafting a digit recognition system from scratch using TensorFlow and Convolutional Neural Networks (CNNs). With a commendable 98% accuracy in identifying handwritten digits, the model showcased its real-world applicability in automated form processing. The capability to precisely recognize and classify digits has proven invaluable, enhancing efficiency and reducing errors in scenarios requiring accurate digit identification.
+                </p>
+
+                    <div class="technologies">
+                        <span class="tech-mark">Python</span>
+                        <span class="tech-mark">Tensorflow</span>
+                        <span class="tech-mark">Convolutional Neural Network</span>
+
+                    </div>
+                    <a href="https://www.kaggle.com/code/singhnavjot2062001/digit-recognition-using-cnn-from-scratch" class="project-button">View Project</a>
+
+            </div>
+            <div class="project-image">
+
+                <img src="{{ url_for('static', filename='images/5.png') }}" alt="Project Image 2">
+            </div>
+        </div>
+
+        <div class="projects">
+            <div class="project-image">
+                <img src="{{ url_for('static', filename='images/6.png') }}" alt="Project Image 1">
+            </div>
+
+            <div class="project-details">
+                <div class="project-name-line"></div>
+                <h3>Startups Analysis</h3>
+                <p>
+                    The project encompassed a comprehensive exploratory data analysis (EDA) of over 2000 Indian startups, shedding light on critical factors such as funding patterns, geographical distribution, and industry trends. The insights gained from this analysis translated into a tangible 30% increase in informed investment decisions. Notably, the project also contributed to a significant 20% reduction in startup failure rates, underscoring its impact in shaping strategic decisions within the dynamic landscape of the Indian startup ecosystem.
+                </p>
+
+                <div class="technologies">
+                        <span class="tech-mark">Python</span>
+                        <span class="tech-mark">Numpy</span>
+                        <span class="tech-mark">Pandas</span>
+                        <span class="tech-mark">Matplotlib</span>
+                        <span class="tech-mark">EDA</span>
+
+                </div>
+                    <a href="https://github.com/singhraj2062001/Startup-Analysis" class="project-button">View Project</a>
+
+            </div>
+        </div>
+
+
+        <div class="projects">
+
+            <div class="project-details">
+                <div class="project-name-line"></div>
+                <h3>Text Classification (Naive Baye's)</h3>
+                <p>
+                    In this project, Natural Language Processing (NLP) techniques were applied to a vast textual dataset, leading to the implementation of a text classification system using Naive Bayes. The project's impact was evident in a substantial 25% reduction in manual effort for categorizing text data. The system demonstrated practical utility in automating large-scale text classification tasks, providing a valuable tool for industries where efficient data processing and categorization are crucial.
+                </p>
+
+                    <div class="technologies">
+                        <span class="tech-mark">Python</span>
+                        <span class="tech-mark">Scikit-Learn</span>
+                        <span class="tech-mark">Naive Baye's</span>
+                        <span class="tech-mark">NLP1</span>
+
+                    </div>
+                    <a href="https://github.com/singhraj2062001/Text-Classification" class="project-button">View Project</a>
+
+            </div>
+            <div class="project-image">
+                <img src="{{ url_for('static', filename='images/7.png') }}" alt="Project Image 2">
+            </div>
+        </div>
+
+        <div class="projects">
+            <div class="project-image">
+
+                <img src="{{ url_for('static', filename='images/81.png') }}" alt="Project Image 1">
+            </div>
+
+            <div class="project-details">
+                <div class="project-name-line"></div>
+                <h3>Movies Clustering</h3>
+                <p>
+                    This project involved the creation of a movie recommender system using advanced clustering techniques on a diverse dataset of 5000 movies. By applying unsupervised learning, the system successfully identified patterns based on genre, rating, and user reviews. The outcome was a substantial 25% increase in user engagement, indicating the effectiveness of the recommendations. Moreover, there was a noteworthy 15% improvement in accuracy compared to conventional collaborative filtering methods, showcasing the system's ability to provide more precise and personalized movie suggestions to users.
+                </p>
+
+                <div class="technologies">
+                        <span class="tech-mark">Python</span>
+                        <span class="tech-mark">Scikit-Learn</span>
+                        <span class="tech-mark">Flask</span>
+                        <span class="tech-mark">NLP</span>
+                </div>
+                    <a href="https://singhraj2062001-movies-recommender-system-app-omxxk4.streamlit.app/" class="project-button">View Project</a>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+  <footer>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/singh-navjot206" target="_blank"><img src="{{ url_for('static', filename='images/linkedin.png') }}" alt="LinkedIn"></a>
+                <a href="https://www.kaggle.com/singhnavjot2062001" target="_blank"><img src="{{ url_for('static', filename='images/kaggle.png') }}" alt="Kaggle"></a>
+                <a href="https://github.com/singhraj2062001" target="_blank"><img src="{{ url_for('static', filename='images/github.png') }}" alt="GitHub"></a>
+                <a href="https://www.instagram.com/hint4success/" target="_blank"><img src="{{ url_for('static', filename='images/instagram.png') }}" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2024 by Navjot Singh. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu-toggle').click(function() {
+                $(this).toggleClass('menu-open');
+                $('.nav-menu').toggleClass('active');
+            });
+        });
+    </script>
+
+
+
+</body>
+</html>

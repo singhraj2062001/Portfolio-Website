@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Title</title>
+</head>
+<body>
+
+<header>
+
+     <div class="project">
+
+    <header>
+        <h2>
+            SKILLS
+        </h2>
+
+    <nav>
+
+            <div class="logo">
+                <a href="/"><img src="{{ url_for('static', filename='images/NS.png') }}" alt="Your Image"></a>
+            </div>
+
+        <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+
+        <ul class="nav-menu">
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#achievements">Achievements</a></li>
+            <li><a href="/projects" >Projects</a></li>
+            <li><a href="/skills" style="color:#00FFFF;">Skills</a></li>
+            <li><a href="/datasets">Datasets</a></li>
+            <li><a href="/resume">Resume</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+        </header>
+    </div>
+
+
+<!-- ... previous code ... -->
+
+<section class="skills-section">
+
+    <div class="radar-chart">
+
+        <canvas id="skillRadarChart1"></canvas>
+    </div>
+
+    <div class="radar-chart">
+        <canvas id="skillRadarChart2"></canvas>
+    </div>
+
+
+</section>
+
+    <section class="skills-section">
+    <div class="radar-chart">
+        <canvas id="skillRadarChart3"></canvas>
+    </div>
+
+    <div class="radar-chart">
+        <canvas id="skillRadarChart4"></canvas>
+    </div>
+
+
+</section>
+
+
+
+  <footer>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/singh-navjot206" target="_blank"><img src="{{ url_for('static', filename='images/linkedin.png') }}" alt="LinkedIn"></a>
+                <a href="https://www.kaggle.com/singhnavjot2062001" target="_blank"><img src="{{ url_for('static', filename='images/kaggle.png') }}" alt="Kaggle"></a>
+                <a href="https://github.com/singhraj2062001" target="_blank"><img src="{{ url_for('static', filename='images/github.png') }}" alt="GitHub"></a>
+                <a href="https://www.instagram.com/hint4success/" target="_blank"><img src="{{ url_for('static', filename='images/instagram.png') }}" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2024 by Navjot Singh. All rights reserved.</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu-toggle').click(function() {
+                $(this).toggleClass('menu-open');
+                $('.nav-menu').toggleClass('active');
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    var ctx = document.getElementById('skillRadarChart1').getContext('2d');
+    var skillRadarChart1 = new Chart(ctx, {
+        type: 'radar',
+        data: {
+            labels: ['Python', 'Numpy', 'Pandas', 'NLP', 'Statistics', 'Deep Learning'], // Add your skill categories here
+            datasets: [{
+                label: 'Data Science',
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                data: [95, 95, 90, 90, 87, 93] // Add proficiency values for each skill
+            }]
+        },
+        options: {
+            scale: {
+                ticks: {
+                    beginAtZero: true,
+                    min: 0,
+                    max: 100,
+                    stepSize: 20
+                }
+            }
+        }
+    });
+
+    var ctx = document.getElementById('skillRadarChart2').getContext('2d');
+    var skillRadarChart2 = new Chart(ctx, {
+        type: 'radar',
+        data: {
+            labels: ['Tensorflow', 'Scikit-Learn', 'Keras', 'Neural Networks', 'Model Building', 'Algorithms'], // Add your skill categories here
+            datasets: [{
+                label: 'Machine Learning',
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                data: [88, 92, 91, 95, 90, 94] // Add proficiency values for each skill
+            }]
+        },
+        options: {
+            scale: {
+                ticks: {
+                    beginAtZero: true,
+                    min: 0,
+                    max: 100,
+                    stepSize: 20
+                }
+            }
+        }
+    });
+
+
+    var ctx = document.getElementById('skillRadarChart3').getContext('2d');
+    var skillRadarChart3 = new Chart(ctx, {
+        type: 'radar',
+        data: {
+            labels: ['PowerBI', 'Tableau', 'Matplotlib', 'Seaborn', 'Plotly', 'Visualization'], // Add your skill categories here
+            datasets: [{
+                label: 'Data Analysis',
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                data: [92, 88, 97, 95, 90, 93] // Add proficiency values for each skill
+            }]
+        },
+        options: {
+            scale: {
+                ticks: {
+                    beginAtZero: true,
+                    min: 0,
+                    max: 100,
+                    stepSize: 20
+                }
+            }
+        }
+    });
+
+    var ctx = document.getElementById('skillRadarChart4').getContext('2d');
+    var skillRadarChart4 = new Chart(ctx, {
+        type: 'radar',
+        data: {
+            labels: ['Flask', 'Streamlit', 'HTML', 'CSS', 'JavaScript', 'PSQL'], // Add your skill categories here
+            datasets: [{
+                label: 'Web Development',
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                data: [92, 90, 93, 91, 89, 87] // Add proficiency values for each skill
+            }]
+        },
+        options: {
+            scale: {
+                ticks: {
+                    beginAtZero: true,
+                    min: 0,
+                    max: 100,
+                    stepSize: 20
+                }
+            }
+        }
+    });
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Title</title>
+</head>
+<body>
+
+<header>
+
+     <div class="project">
+
+    <header>
+        <h2>
+            RESUME
+        </h2>
+
+    <nav>
+
+            <div class="logo">
+                <a href="/"><img src="{{ url_for('static', filename='images/NS.png') }}" alt="Your Image"></a>
+            </div>
+
+        <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+
+        <ul class="nav-menu">
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#achievements">Achievements</a></li>
+            <li><a href="/projects" >Projects</a></li>
+            <li><a href="/skills">Skills</a></li>
+            <li><a href="/datasets">Datasets</a></li>
+            <li><a href="/resume" style="color:#00FFFF;">Resume</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+        </header>
+    </div>
+
+
+
+    <div class="resume-container">
+        <iframe src="/static/Resume.pdf" frameborder="0"></iframe>
+
+    </div>
+
+
+
+
+  <footer>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/singh-navjot206" target="_blank"><img src="{{ url_for('static', filename='images/linkedin.png') }}" alt="LinkedIn"></a>
+                <a href="https://www.kaggle.com/singhnavjot2062001" target="_blank"><img src="{{ url_for('static', filename='images/kaggle.png') }}" alt="Kaggle"></a>
+                <a href="https://github.com/singhraj2062001" target="_blank"><img src="{{ url_for('static', filename='images/github.png') }}" alt="GitHub"></a>
+                <a href="https://www.instagram.com/hint4success/" target="_blank"><img src="{{ url_for('static', filename='images/instagram.png') }}" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2024 by Navjot Singh. All rights reserved.</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu-toggle').click(function() {
+                $(this).toggleClass('menu-open');
+                $('.nav-menu').toggleClass('active');
+            });
+        });
+    </script>
+
+
+
+</body>
+</html>

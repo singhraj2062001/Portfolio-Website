@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Your Portfolio</title>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="{{ url_for('static', filename='videos/video3.mp4') }}" type="video/mp4">
+            <!-- Add more source elements for other video formats if needed -->
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+    <header>
+        <h1>
+            NAVJOT<br>SINGH
+        </h1>
+
+<nav>
+    <div class="logo">
+        <a href="#index"><img src="{{ url_for('static', filename='images/NS.png') }}" alt="Your Image"></a>
+    </div>
+
+            <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+
+        <ul class="nav-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/skills">Skills</a></li>
+            <li><a href="/datasets">Datasets</a></li>
+            <li><a href="/resume">Resume</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+
+</nav>
+
+        </header>
+    </div>
+    <!-- Update the image path and introduction content -->
+    <section id="about" class="scroll">
+        <h2>About Me</h2>
+        <div class="about-me-line"></div>
+        <p class="description">Experienced and passionate computer science student with a focus on data science and machine learning.</p>
+        <div class="introduction">
+            <img src="{{ url_for('static', filename='images/image1.jpg') }}" alt="Your Image">
+            <p>
+                I'm Navjot Singh – a tech enthusiast with a passion for data science and machine learning. My journey spans diverse projects and a solid foundation in Computer Science and Engineering, shaping my proficiency in Python, data science libraries, and advanced machine learning frameworks like TensorFlow.
+                <br>
+                <br>
+                I've seamlessly blended web scraping and NLP techniques in projects like the Medicine Recommender System, achieving a remarkable 95% recommendation accuracy. Proficient in Python, I navigate the tech landscape with finesse, exploring data science libraries like NumPy, pandas, and incorporating advanced machine learning algorithms. My experience extends to creating interactive visualizations with tools like Power BI and Tableau, adding another layer to my data-driven expertise.
+                <br>
+                <br>
+                Currently, my focus lies in the intersection of data science and healthcare. With a commitment to reshaping the industry, I aspire to pioneer innovative solutions that enhance patient care and redefine the boundaries of medical innovation.
+            </p>
+        </div>
+    </section>
+
+    <section id="achievements" class="scroll">
+        <h2>Achievements</h2>
+        <div class="about-me-line"></div>
+         <div class="achievement-cards">
+             <div class="achievement-card">
+                <img src="static/images/achievement_kaggle.png" alt="Achievement 1">
+                <div class="achievement-details">
+                    <h3>Expert on Kaggle</h3>
+                    <p>Acknowledged for excellence in data science, recognized on prestigious Kaggle platform.</p>
+                </div>
+            </div>
+
+            <div class="achievement-card">
+                <img src="static/images/achievement_insta.jpg" alt="Achievement 2">
+                <div class="achievement-details">
+                    <h3>240K Insta Followers</h3>
+                    <p>Established impactful online presence with motivational content, fostering engagement and inspiration.</p>
+                </div>
+            </div>
+
+            <div class="achievement-card">
+                <img src="static/images/achievement_kaggle2.png" alt="Achievement 3">
+                <div class="achievement-details">
+                    <h3>Top 150 Rank</h3>
+                    <p>Attained top-150 global Kaggle ranking, showcasing expertise in competitive data science.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/singh-navjot206" target="_blank"><img src="{{ url_for('static', filename='images/linkedin.png') }}" alt="LinkedIn"></a>
+                <a href="https://www.kaggle.com/singhnavjot2062001" target="_blank"><img src="{{ url_for('static', filename='images/kaggle.png') }}" alt="Kaggle"></a>
+                <a href="https://github.com/singhraj2062001" target="_blank"><img src="{{ url_for('static', filename='images/github.png') }}" alt="GitHub"></a>
+                <a href="https://www.instagram.com/hint4success/" target="_blank"><img src="{{ url_for('static', filename='images/instagram.png') }}" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2024 by Navjot Singh. All rights reserved.</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu-toggle').click(function() {
+                $(this).toggleClass('menu-open');
+                $('.nav-menu').toggleClass('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
