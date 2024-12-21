@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Experience | Navjot Singh</title>
+</head>
+<body>
+
+<header>
+    <div class="project">
+        <h2>EXPERIENCE</h2>
+
+        <nav>
+
+            <div class="logo">
+                <a href="/"><img src="{{ url_for('static', filename='images/NS.png') }}" alt="Your Image"></a>
+            </div>
+
+        <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+        </div>
+
+
+        <ul class="nav-menu">
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#achievements">Achievements</a></li>
+            <li><a href="/experience"  style="color:#00FFFF;">Experience</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/skills">Skills</a></li>
+            <li><a href="/datasets">Datasets</a></li>
+            <li><a href="/resume">Resume</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    </div>
+</header>
+
+<!-- Experience Data -->
+<section class="projects-section">
+
+    <div class="projects">
+
+        <div class="project-details">
+            <div class="project-name-line"></div>
+
+            <h3>Python Developer | Syansoft Technologies</h3>
+            <p class="duration">July 2024 – December 2024</p>
+            <ul class="experience-list">
+                <li>Designed and deployed scalable RESTful APIs using Django in a microservice architecture. Implemented asynchronous processing to handle high user requests, reducing latency by 30%.</li>
+                <li>Developed a secure email utility with Microsoft Graph API for Outlook 365, automating email data extraction and integration with Azure Blob Storage for efficient attachment management.</li>
+                <li>Deployed CI/CD pipelines using Azure DevOps, ensuring seamless deployment across environments. Managed MSSQL databases, optimized queries, and maintained robust version control using Git.
+                </li>
+            </ul>
+
+                <div class="technologies">
+                    <span class="tech-mark">Python</span>
+                    <span class="tech-mark">Django</span>
+                    <span class="tech-mark">Microsoft Azure</span>
+                    <span class="tech-mark">Azure Devops</span>
+                    <span class="tech-mark">MSSQL</span>
+                    <span class="tech-mark">Azure Blob Storage</span>
+                    <span class="tech-mark">Asynchronous APIs</span>
+
+                </div>
+                
+
+        </div>
+        <div class="project-image">
+
+            <img src="{{ url_for('static', filename='images/9.png') }}" alt="Experience Image 2">
+        </div>
+    </div>
+
+    <div class="projects">
+        <div class="project-details">
+            <div class="project-name-line"></div>
+
+            <h3>Data Science Trainee | AlmaBetter</h3>
+            <p class="duration">October 2023 – June 2024</p>
+            <ul class="experience-list">
+                <li>Conducted business analysis for Airbnb and social media platforms using advanced statistics and machine learning techniques, delivering actionable insights on user behavior and revenue trends</li>
+                <li>Engineered predictive and NLP models with TensorFlow, Scikit-Learn, and PyTorch. Optimized model performance through hyperparameter tuning and deployed end-to-end pipelines on cloud platforms.</li>
+                <li>Created visually compelling dashboards using Matplotlib and Seaborn, effectively communicating complex insights to stakeholders for data-driven decision-making.</li>
+            </ul>
+
+                <div class="technologies">
+                    <span class="tech-mark">Python</span>
+                    <span class="tech-mark">TensorFlow</span>
+                    <span class="tech-mark">Scikit-learn</span>
+                    <span class="tech-mark">NLP</span>
+                    <span class="tech-mark">Matplotlib</span>
+                    <span class="tech-mark">Seaborn</span>
+                    <span class="tech-mark">EDA</span>
+
+                </div>
+                
+
+        </div>
+        <div class="project-image">
+
+            <img src="{{ url_for('static', filename='images/10.png') }}" alt="Experience Image 2">
+        </div>
+    </div>
+
+    <div class="projects">
+        <div class="project-details">
+            <div class="project-name-line"></div>
+           
+
+            <h3>Data Science & ML Bootcamp | PixelInfosys</h3>
+            <p class="duration">January 2023 – June 2023</p>
+            <ul class="experience-list">
+                <li>Delivered projects involving supervised and unsupervised learning, including classification, regression, and clustering. Built advanced neural networks for tasks like image recognition and sequence analysis.</li>
+                <li>Developed CNNs and RNNs using TensorFlow and Keras for image and text analysis. Improved model accuracy by 15% through advanced optimization techniques such as cross-validation and grid search.</li>
+                <li>Implemented data preprocessing workflows for cleaning and transforming raw datasets, ensuring optimal model performance. Created visualization tools to highlight trends and anomalies.</li>
+            </ul>
+
+                <div class="technologies">
+                    <span class="tech-mark">Python</span>
+                    <span class="tech-mark">Keras</span>
+                    <span class="tech-mark">Tensorflow</span>
+                    <span class="tech-mark">Neural Networks</span>
+                    <span class="tech-mark">CNN</span>
+                    <span class="tech-mark">OpenCV</span>
+
+                </div>
+              
+
+        </div>
+        <div class="project-image">
+
+            <img src="{{ url_for('static', filename='images/11.png') }}" alt="Experience Image 2">
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <div class="icons">
+        <a href="https://www.linkedin.com/in/singh-navjot206" target="_blank"><img src="{{ url_for('static', filename='images/linkedin.png') }}" alt="LinkedIn"></a>
+        <a href="https://www.kaggle.com/singhnavjot2062001" target="_blank"><img src="{{ url_for('static', filename='images/kaggle.png') }}" alt="Kaggle"></a>
+        <a href="https://github.com/singhraj2062001" target="_blank"><img src="{{ url_for('static', filename='images/github.png') }}" alt="GitHub"></a>
+        <a href="https://www.instagram.com/hint4success/" target="_blank"><img src="{{ url_for('static', filename='images/instagram.png') }}" alt="Instagram"></a>
+    </div>
+    <p>&copy; 2024 by Navjot Singh. All rights reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.menu-toggle').click(function() {
+            $(this).toggleClass('menu-open');
+            $('.nav-menu').toggleClass('active');
+        });
+    });
+</script>
+
+</body>
+</html>

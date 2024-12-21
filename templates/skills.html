@@ -37,6 +37,7 @@
         <ul class="nav-menu">
             <li><a href="/#about">About</a></li>
             <li><a href="/#achievements">Achievements</a></li>
+            <li><a href="/experience">Experience</a></li>
             <li><a href="/projects" >Projects</a></li>
             <li><a href="/skills" style="color:#00FFFF;">Skills</a></li>
             <li><a href="/datasets">Datasets</a></li>
@@ -58,23 +59,32 @@
     </div>
 
     <div class="radar-chart">
-        <canvas id="skillRadarChart2"></canvas>
+        <canvas id="skillRadarChart3"></canvas>
+    </div>
+
+    <div class="radar-chart">
+        <canvas id="skillRadarChart6"></canvas>
     </div>
 
 
 </section>
 
-    <section class="skills-section">
+<section class="skills-section">
     <div class="radar-chart">
-        <canvas id="skillRadarChart3"></canvas>
+        <canvas id="skillRadarChart2"></canvas>
     </div>
 
     <div class="radar-chart">
         <canvas id="skillRadarChart4"></canvas>
     </div>
+    
+    <div class="radar-chart">
+        <canvas id="skillRadarChart5"></canvas>
+    </div>
 
 
 </section>
+
 
 
 
@@ -184,6 +194,54 @@
                 backgroundColor: 'rgba(54, 162, 235, 0.2)',
                 borderColor: 'rgba(54, 162, 235, 1)',
                 data: [92, 90, 93, 91, 89, 87]
+            }]
+        },
+        options: {
+            scale: {
+                ticks: {
+                    beginAtZero: true,
+                    min: 0,
+                    max: 100,
+                    stepSize: 20
+                }
+            }
+        }
+    });
+
+    var ctx = document.getElementById('skillRadarChart5').getContext('2d');
+    var skillRadarChart4 = new Chart(ctx, {
+        type: 'radar',
+        data: {
+            labels: ['Django', 'Restful APIs', 'Microsoft Graph API', 'Asynchronous APIs', 'JWT', 'Multithreading'],
+            datasets: [{
+                label: 'API Development and Integration',
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                data: [88, 85, 90, 89, 90, 87]
+            }]
+        },
+        options: {
+            scale: {
+                ticks: {
+                    beginAtZero: true,
+                    min: 0,
+                    max: 100,
+                    stepSize: 20
+                }
+            }
+        }
+    });
+
+    var ctx = document.getElementById('skillRadarChart6').getContext('2d');
+    var skillRadarChart4 = new Chart(ctx, {
+        type: 'radar',
+        data: {
+            labels: ['Microsoft Azure', 'Azure Devops', 'Azure Blob Storage', 'CI/CD Pipelines', 'Git', 'Microservices'],
+            datasets: [{
+                label: 'Cloud and Deployment',
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                data: [88, 87, 93, 90, 89, 90]
             }]
         },
         options: {

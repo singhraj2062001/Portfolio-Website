@@ -12,6 +12,10 @@ app.secret_key = '**********'
 def index():
     return render_template('index.html')
 
+@app.route('/experience')
+def experience():
+    return render_template('experience.html')
+
 
 @app.route('/datasets')
 def datasets():
